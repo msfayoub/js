@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="score-display" id="scoreDisplay"></div>
+        <div>
+            <form id="quizForm"> 
+    <h1>QCM:</h1>
+    <div class="question">
+        <p class="dem">1-What is the correct way to declare a variable in JavaScript?</p>
+        <p class="timer" id="timer1">Time left: 30 seconds</p>
+        <input type="checkbox" id="1_1" name="options1" value="value1">
+        <label for="1_1">A) let myVar = 10;</label><br>
+        <input type="checkbox" id="1_2" name="options1" value="value2">
+        <label for="1_2">B) variable myVar = 10;</label><br>
+        <input type="checkbox" id="1_3" name="options1" value="value3">
+        <label for="1_3">C) const myVar;</label><br>
+        <input type="checkbox" id="1_4" name="options1" value="value4">
+        <label for="1_4">D) myVar := 10;</label><br>
+    </div>
+    
+    <div class="question">
+        <p class="dem">2-Which of the following is NOT a primitive data type in JavaScript?</p>
+        <p class="timer" id="timer2">Time left: 30 seconds</p>
+        <input type="checkbox" id="2_1" name="options2" value="value1">
+        <label for="2_1">A) String</label><br>
+        <input type="checkbox" id="2_2" name="options2" value="value2">
+        <label for="2_2">B) Boolean</label><br>
+        <input type="checkbox" id="2_3" name="options2" value="value3">
+        <label for="2_3">C) Object</label><br>
+        <input type="checkbox" id="2_4" name="options2" value="value4">
+        <label for="2_4">D) Number</label><br>
+    </div>
+    
+    <div class="question">
+        <p class="dem">3-What will console.log(2 + "2"); output?</p>
+        <p class="timer" id="timer3">Time left: 30 seconds</p>
+        <input type="checkbox" id="3_1" name="options3" value="value1">
+        <label for="3_1">A) 4</label><br>
+        <input type="checkbox" id="3_2" name="options3" value="value2">
+        <label for="3_2">B) "22"</label><br>
+        <input type="checkbox" id="3_3" name="options3" value="value3">
+        <label for="3_3">C) NaN</label><br>
+        <input type="checkbox" id="3_4" name="options3" value="value4">
+        <label for="3_4">D) Error</label><br>
+    </div>
+    
+    <div class="question">
+        <p class="dem">4-How do you write a function in JavaScript?</p>
+        <p class="timer" id="timer4">Time left: 30 seconds</p>
+
+        <input type="checkbox" id="4_1" name="options4" value="value1">
+        <label for="4_1">A) function myFunction() {}</label><br>
+        <input type="checkbox" id="4_2" name="options4" value="value2">
+        <label for="4_2">B) def myFunction() {}</label><br>
+        <input type="checkbox" id="4_3" name="options4" value="value3">
+        <label for="4_3">C) func myFunction() {}</label><br>
+        <input type="checkbox" id="4_4" name="options4" value="value4">
+        <label for="4_4">D) create function myFunction() {}</label><br>
+    </div>
+    
+    <div class="question">
+        <p class="dem">5-Which method is used to remove the last element of an array?</p>
+        <p class="timer" id="timer5">Time left: 30 seconds</p>
+
+        <input type="checkbox" id="5_1" name="options5" value="value1">
+        <label for="5_1">A) pop()</label><br>
+        <input type="checkbox" id="5_2" name="options5" value="value2">
+        <label for="5_2">B) shift()</label><br>
+        <input type="checkbox" id="5_3" name="options5" value="value3">
+        <label for="5_3">C) removeLast()</label><br>
+        <input type="checkbox" id="5_4" name="options5" value="value4">
+        <label for="5_4">D) splice()</label><br>
+    </div>
+    
+    <div class="question">
+        <p class="dem">6-What will typeof null return?</p>
+        <p class="timer" id="timer6">Time left: 30 seconds</p>
+
+        <input type="checkbox" id="6_1" name="options6" value="value1">
+        <label for="6_1">A) "null"</label><br>
+        <input type="checkbox" id="6_2" name="options6" value="value2">
+        <label for="6_2">B) "object"</label><br>
+        <input type="checkbox" id="6_3" name="options6" value="value3">
+        <label for="6_3">C) "undefined"</label><br>
+        <input type="checkbox" id="6_4" name="options6" value="value4">
+        <label for="6_4">D) "number"</label><br>
+    </div>
+    
+    <div class="question">
+        <p class="dem">7-Which of these is a falsy value in JavaScript?</p>
+        <p class="timer" id="timer7">Time left: 30 seconds</p>
+        <input type="checkbox" id="7_1" name="options7" value="value1">
+        <label for="7_1">A) "false"</label><br>
+        <input type="checkbox" id="7_2" name="options7" value="value2">
+        <label for="7_2">B) 0</label><br>
+        <input type="checkbox" id="7_3" name="options7" value="value3">
+        <label for="7_3">C) "0"</label><br>
+        <input type="checkbox" id="7_4" name="options7" value="value4">
+        <label for="7_4">D) {}</label><br>
+    </div>
+    
+    <div class="question">
+        <p class="dem">8-Which of the following methods can be used to iterate over an array in JavaScript?</p>
+        <p class="timer" id="timer8">Time left: 30 seconds</p>
+        
+        <input type="checkbox" id="8_1" name="options8" value="value1">
+        <label for="8_1">A) forEach()</label><br>
+        <input type="checkbox" id="8_2" name="options8" value="value2">
+        <label for="8_2">B) map()</label><br>
+        <input type="checkbox" id="8_3" name="options8" value="value3">
+        <label for="8_3">C) filter()</label><br>
+        <input type="checkbox" id="8_4" name="options8" value="value4">
+        <label for="8_4">D) reduce()</label><br>
+    </div>
+    
+    <button type="submit" class="btn">Submit</button>
+</form>
+    
+</div>
+</div>
+<script src="mini_projet.js"></script>
+</body>
+</html>

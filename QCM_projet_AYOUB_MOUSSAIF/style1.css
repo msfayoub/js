@@ -1,0 +1,46 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    margin: 30px;
+    background-color: antiquewhite;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.question{
+    padding-bottom: 15px;
+    padding-top: 10px;
+    border-top: 3px solid black;
+}
+.dem{
+    font-size: xx-large;
+}
+.question input {
+    transform: scale(1.5); 
+    margin-right: 5px; 
+}
+.btn{
+    float: right;
+    transform: scale(2.5); 
+    background-color:rgb(47, 165, 233);
+    border-radius: 7px;
+    
+}
+.timer {
+    font-size: large;
+    color: red;
+}
+.disabled{
+    pointer-events: none;
+    opacity: 0.6;
+}
+.score-display {
+    font-size: xx-large;
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+}
