@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>Manipulation de vue</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+
+<div id="monapp">
+    <button @click="increase">++</button>
+    <p>{{ count }}</p>
+    <button @click="reduce">--</button>
+</div>
+
+<script>
+    const appli = {
+        data() {
+            return {
+                count: 0 
+            };
+        },
+        methods: {
+            increase() {
+                this.count++; 
+            },
+            reduce() {
+                this.count--;
+            }
+        }
+    };
+
+    Vue.createApp(appli).mount("#monapp");
+</script>
+
+</body>
+</html>

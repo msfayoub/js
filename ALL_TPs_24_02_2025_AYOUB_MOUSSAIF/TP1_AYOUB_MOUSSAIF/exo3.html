@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>Manipulation de vue</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="monapp">
+    <label>Enter your text:</label>
+    <input type="text" v-model="text" @keyup="handleKeyup" />
+    <p ref="textElement" class="hidden">{{ ALLO }}</p>
+</div>
+
+<script>
+    const appli = {
+        data() {
+            return {
+                ALLO: "⚠️ Veuillez ne pas insérer d'espace dans le texte !",
+                text: "" // Added to track input value
+            };
+        },
+        methods: {
+            handleKeyup(event) {
+                if (event.key === ' ') {
+                    this.$refs.textElement.classList.remove("hidden"); // Remove the class
+                }
+            }
+        }
+    };
+
+    Vue.createApp(appli).mount("#monapp");
+</script>
+
+</body>
+</html>
