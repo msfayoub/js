@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Les Bonnes Pièces</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script type="module" src="pieces.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="images/LOGO.png" alt="LOGO">
+            <h1>Les Bonnes Pièces</h1>
+        </header>
+        <main id="app">
+            <!-- Menu de recherche -->
+            <section class="filtres">
+                <h3>Filtres</h3>
+                <input type="text" v-model="text">
+                <select v-model="selectedCategory" name="categories" id="categories">
+                    <option value="1">Toutes les catégories</option>
+                    <option value="Électricité">Électricité</option>
+                    <option value="Filtration">Filtration</option>
+                    <option value="Moteur">Moteur</option>
+                    <option value="Freinage">Freinage</option>
+                    <option value="Refroidissement">Refroidissement</option>
+                    <option value="Suspension">Suspension</option>
+                    <option value="Sécurité">Sécurité</option>
+                    <option value="Carburant">Carburant</option>
+                    <option value="Carrosserie">Carrosserie</option>
+                    <option value="Échappement">Échappement</option>
+                    <option value="Direction">Direction</option>
+                </select>
+                <select v-model="selectedPriceOrder" name="prix" id="prix">
+                    <option value="1">Prix croissant</option>
+                    <option value="2">Prix décroissant</option>
+                </select>
+                <select v-model="selectedStockStatus" name="stock" id="stock">
+                    <option value="0">Tous les articles</option>
+                    <option value="1">En stock</option>
+                    <option value="2">Hors stock</option>
+                </select>
+            </section>
+
+            <!-- Fiches produits -->
+            <section class="fiches">
+                <div class="pauto" v-for="pauto in filteredPiecesAutos" :key="pauto.id">
+                    <img :src="'/images/' + pauto.id + '.png'" alt="image" class="photo">
+                    <div>id: {{pauto.id}}</div>
+                    <div class="title">{{pauto.nom}}</div>
+                    <div class="prix">Price : {{pauto.prix}}</div>
+                    <div>{{pauto.categorie}}</div>
+                    <div v-if="pauto.inStock">In Stock</div>
+                    <div v-else>Out of Stock</div>
+                    <button :disabled="!pauto.inStock">Add to Cart</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Load the JavaScript file -->
+        <script src="sandbox.js"></script>
+    </body>
+</html>
