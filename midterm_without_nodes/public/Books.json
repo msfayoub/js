@@ -1,0 +1,76 @@
+{
+    "Books": [
+    {
+      "titre": "To Kill a Mockingbird",
+      "auteur": "Harper Lee",
+      "img": "good.webp",
+      "status": true,
+      "id":1,
+      "résumé":"azertyuiopqsdfghjklwxcvbn",
+
+      "year":"9999"
+
+    },
+    {
+      "titre": "1984",
+      "id":2,
+      "auteur": "George Orwell",
+      "img": "good.webp",
+      "year":"9999",
+      "résumé":"azertyuiopqsdfghjklwxcvbn",
+
+      "status": false
+    },
+    {
+      "titre": "The Great Gatsby",
+      "auteur": "F. Scott Fitzgerald",
+      "img": "good.webp",
+      "year":"9999",
+      "id":3,
+      "résumé":"azertyuiopqsdfghjklwxcvbn",
+
+
+      "status": true
+    },
+    {
+      "titre": "Pride and Prejudice",
+      "auteur": "Jane Austen",
+      "img": "good.webp",
+      "year":"9999",
+      "id":4,
+      "résumé":"azertyuiopqsdfghjklwxcvbn",
+
+      "status": false
+    },
+    {
+      "titre": "The Catcher in the Rye",
+      "auteur": "J.D. Salinger",
+      "img": "good.webp",
+      "year":"9999",
+      "id":5,
+      "résumé":"azertyuiopqsdfghjklwxcvbn",
+
+
+      "status": true
+    },
+    {
+      "titre": "The Hobbit",
+      "auteur": "J.R.R. Tolkien",
+      "img": "good.webp",
+      "year":"9999",
+      "id":6,
+      "résumé":"azertyuiopqsdfghjklwxcvbn",
+      "status": false
+    },
+    {
+      "titre": "The Harry Potter Series",
+      "auteur": "J.K. Rowling",
+      "img": "good.webp",
+      "year":"9999",
+      "id":7,
+
+      "status": false,
+      "résumé":"azertyuiopqsdfghjklwxcvbn"
+    }
+  ]}
+  
